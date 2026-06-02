@@ -2,6 +2,10 @@
 
 Production-ready Retrieval-Augmented Generation API built with FastAPI, Google Gemini, and Pinecone. Upload PDFs and query them in natural language with source citations.
 
+## System Architecture
+
+![System Architecture](https://i.ibb.co.com/Kzr8TQvf/Chat-GPT-Image-Jun-2-2026-10-52-12-PM.png)
+
 ## Stack
 
 | Layer | Technology |
