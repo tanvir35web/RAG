@@ -225,7 +225,7 @@ Content-Type: application/json
       "relevance_score": 0.87
     }
   ],
-  "model": "gemini-2.5-flash",
+  "model": "gemini-3.1-flash-lite",
   "usage": {
     "prompt_tokens": 512,
     "completion_tokens": 128,
@@ -261,7 +261,7 @@ When no uploaded documents match the question, the API still returns `200 OK` wi
 {
   "answer": "No relevant documents found to answer this question.",
   "citations": [],
-  "model": "gemini-2.5-flash",
+  "model": "gemini-3.1-flash-lite",
   "usage": {
     "prompt_tokens": 0,
     "completion_tokens": 0,

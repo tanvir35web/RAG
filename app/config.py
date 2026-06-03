@@ -14,7 +14,7 @@ class Settings(BaseSettings):
     # Google Gemini
     gemini_api_key: str
     gemini_embedding_model: str = "gemini-embedding-2"
-    gemini_chat_model: str = "gemini-2.5-flash"
+    gemini_chat_model: str = "gemini-3.1-flash-lite"
     gemini_embedding_dimensions: int = 768  # output_dimensionality (128–3072)
 
     # Pinecone

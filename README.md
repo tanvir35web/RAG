@@ -12,7 +12,7 @@ Production-ready Retrieval-Augmented Generation API built with FastAPI, Google G
 |---|---|
 | Framework | FastAPI |
 | Embeddings | Gemini `gemini-embedding-2` (768-dim) |
-| Generation | Gemini `gemini-2.5-flash` |
+| Generation | Gemini `gemini-3.1-flash-lite` |
 | Vector Store | Pinecone Serverless |
 | PDF Parsing | pypdf |
 | Logging | structlog (JSON) |
@@ -147,7 +147,7 @@ curl -X POST http://localhost:8000/api/v1/chat \
       "relevance_score": 0.9124
     }
   ],
-  "model": "gemini-2.5-flash",
+  "model": "gemini-3.1-flash-lite",
   "usage": {
     "prompt_tokens": 512,
     "completion_tokens": 128,
@@ -216,7 +216,7 @@ curl -X DELETE "http://localhost:8000/api/v1/documents/report.pdf"
 | `PINECONE_API_KEY` | **required** | Pinecone API key |
 | `PINECONE_INDEX` | **required** | Pinecone index name |
 | `GEMINI_EMBEDDING_MODEL` | `gemini-embedding-2` | Embedding model |
-| `GEMINI_CHAT_MODEL` | `gemini-2.5-flash` | Chat completion model |
+| `GEMINI_CHAT_MODEL` | `gemini-3.1-flash-lite` | Chat completion model |
 | `GEMINI_EMBEDDING_DIMENSIONS` | `768` | Output vector size (128–3072) |
 | `PINECONE_NAMESPACE` | `documents` | Pinecone namespace |
 | `PINECONE_TOP_K` | `5` | Default retrieval count |
